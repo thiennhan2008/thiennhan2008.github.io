@@ -1,0 +1,27 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    background-color: #e6f7ff;
+    padding: 50px;
+}
+
+h1 {
+    color: darkblue;
+}
+
+h2 {
+    color: teal;
+}
+
+a {
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: #0077b6;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+a:hover {
+    background-color: #023e8a;
+}

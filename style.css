@@ -1,0 +1,108 @@
+body {
+    background-color: lightblue;
+    text-align: center;
+}
+
+h1 {
+    color: darkblue;
+}
+
+.aquarium {
+    width: 900px;
+    height: 550px;
+    background-color: skyblue;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.aquarium img {
+    position: absolute;
+}
+
+.diver1 {
+    width: 150px;
+    top: 50px;
+    left: 50px;
+}
+
+.diver2 {
+    width: 150px;
+    top: 200px;
+    left: 250px;
+}
+
+.diver3 {
+    width: 150px;
+    top: 350px;
+    left: 500px;
+}
+
+.faint {
+    width: 150px;
+    top: 100px;
+    left: 650px;
+}
+
+.goldfish {
+    width: 180px;
+    top: 250px;
+    left: 350px;
+}
+
+.shark {
+    width: 180px;
+    top: 30px;
+    left: 400px;
+}
+
+.turtle {
+    width: 150px;
+    top: 380px;
+    left: 100px;
+}
+
+
+.goldfish {
+    animation: swim 8s linear infinite alternate;
+}
+
+.shark {
+    animation: swim 12s linear infinite alternate;
+}
+
+.faint {
+    animation: swim 6s linear infinite alternate;
+}
+
+@keyframes swim {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(100px);
+    }
+}
+
+/* Hiệu ứng thợ lặn */
+.diver1,
+.diver2,
+.diver3 {
+    animation: diving 3s ease-in-out infinite alternate;
+}
+
+@keyframes diving {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(25px);
+    }
+}
+
+/* Hiệu ứng rùa */
+.turtle {
+    animation: diving 4s ease-in-out infinite alternate;
+}
